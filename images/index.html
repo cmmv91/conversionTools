@@ -1,0 +1,51 @@
+<html>
+<head>
+	<script type="text/javascript" src="calculate.js"></script>
+</head>
+
+<body>
+	<!--Content-->
+	<form name="calculator">
+		<table>
+			<tr>
+				<td>
+					<input type="text" name="display" id="display" disabled>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="button" name="one" value="1" onclick="calculator.display.value = writeScript(1)">
+					<input type="button" name="two" value="2" onclick="calculator.display.value = writeScript(2)">
+					<input type="button" name="three" value="3" onclick="calculator.display.value = writeScript(3)">
+					<input type="button" name="plus" value="+" onclick="calculator.display.value = sumScript(calculator.display.value)">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="button" name="four" value="4" onclick="calculator.display.value = writeScript(4)">
+					<input type="button" name="five" value="5" onclick="calculator.display.value = writeScript(5)">
+					<input type="button" name="six" value="6" onclick="calculator.display.value = writeScript(6)">
+					<input type="button" name="minus" value="-" onclick="calculator.display.value = subScript(calculator.display.value)">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="button" name="seven" value="7" onclick="calculator.display.value = writeScript(7)">
+					<input type="button" name="eight" value="8" onclick="calculator.display.value = writeScript(8)">
+					<input type="button" name="nine" value="9" onclick="calculator.display.value = writeScript(9)">
+					<input type="button" name="division" value="/" onclick="calculator.display.value = divScript(calculator.display.value)">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="button" class="operator" name="zero" value="0" onclick="calculator.display.value = writeScript(0)">
+					<input type="button" name="clear" value="c" onclick="calculator.display.value = clearButton()">
+					<input type="button" name="enter" value="=" onclick="calculator.display.value = calculate(calculator.display.value)">
+					<input type="button" name="multiply" value="*" onclick="calculator.display.value = mulScript(calculator.display.value)">
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+
+</html>
